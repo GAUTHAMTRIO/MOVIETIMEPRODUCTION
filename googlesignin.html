@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Sign In Example</title>
+</head>
+<body>
+	<h1>Sign in with Google</h1>
+	<button onclick="signIn()">Sign in with Google</button>
+
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<script>
+		function signIn() {
+			gapi.load('auth2', function() {
+				gapi.auth2.init({
+					client_id: 'YOUR_CLIENT_ID'
+				}).then(function() {
+					gapi.auth2.getAuthInstance().signIn();
+				});
+			});
+		}
+	</script>
+</body>
+</html>
