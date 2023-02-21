@@ -1,0 +1,29 @@
+.game-container {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.resources, .buildings, .workers {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.buildings .building {
+    margin-bottom: 10px;
+}
+
+.buildings button, .workers button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.buildings button:disabled, .workers button:disabled {
+    background-color: gray;
+    color: white;
+    cursor: default;
+}
