@@ -1,11 +1,129 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="responsivesidebar.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body style="bottom: -50;left: 500.500;right: -149;right: -159;left: 420px;top: 378.500;bottom: -996.500;top: 470px;" <div="" class="logo-container"></div>
+<body>
+  <div class="sidebar"style="top: 70px;">
+    <div class="logo-details">
+      <i class='downweb-removebg-preview.png'></i>
+        <div class="logo_name">DOWNWEB</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          </i><i class='bx bx-heart' ></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="home.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">HOME</span>
+       </a>
+       <span class="tooltip">User</span>
+     </li>
+     <li>
+       <a href="contact.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Messages</span>
+       </a>
+       <span class="tooltip">Messages</span>
+     </li>
+     <li>
+       <a href="index1.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">ABOUT</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="login.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">LOGIN</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="gamewebsite.html">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">GAMES</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="anime.html">
+         <i class='bx bx-grid-alt'></i>
+         <span class="links_name">DOWN ANIME</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="Music App Advanced Level/music.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">DOWN MUSIC</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <!--<img src="profile.jpg" alt="profileImg">-->
+           <div class="name_job">
+             <div class="name">GAUTHAM</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
 
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
 </html>
+
 <body style="bottom: -50;left:  500.500;"
 <div class="logo-container">
-    <a href="index.html">
-      <img src="downweb-removebg-preview.png" alt="floating.html">
-    </a><a href="floating.html">
-<a href="floating.html">
+    <a href="floating.html" style="margin-left: 100px;">
+      <img src="downweb-removebg-preview.png" alt="Website Logo">
+    </a>
   </div>
 <!DOCTYPE html>
 <html>
@@ -17,46 +135,26 @@
 	<header>
 		<nav>
 			<ul>
+        <header style="margin-left: 90px;"></header>
 				<li><a href="home.html">Home</a></li>
 				<li><a href="index1.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="login.html">login</a></li>
-				<li><a href="gamewebsite.html">play games</a></li>
-				<li><a href="music.html">music</a></li>
-				<li><a href="anime.html">anime</a></li>
-				<li><a href="floating.html">logo</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
+	<main style="margin-left: 90px;margin-bottom: 180px;"></section>
 		<section class="banner">
-			<h1>🆆🅴🅻🅲🅾🅼🅴 🆃🅾 🅼🆈 🆆🅴🅱🆂🅸🆃🅴
+      <main style="margin-left: 90px;">
+      </main>
+			<h1><h1 style="margin-left: 90px;"></h1>🆆🅴🅻🅲🅾🅼🅴 🆃🅾 🅼🆈 🆆🅴🅱🆂🅸🆃🅴
 				𐋅𐌉 𐌉𐌌 Ᏽ𐌀𐌵𐌕𐋅𐌀𐌌 𐌀𐌍𐌃 𐌕𐋅𐌉𐌔 𐌉𐌔 𐌌𐌙 Ꮤ𐌄𐌁𐌔𐌉𐌕𐌄
-			</h1>
-			<img src="https://lh3.googleusercontent.com/YKPCoIBtLEFKT02kFGh2n6pa_-Ev8-ruvwZYGPhLE84GlUgK_F5bViL5in4EATXfZ1iEEwqWu6bu0qW1CXQU10a0Zmc9WmMWONkF2QGy" alt="image.jpj.jpg">
-			<p>We gonna offer the best services ever provided by any app.</p>
-		</section>
-
-		<section class="features">
-			<h2>OUR SERICES</h2>
-			<ul>
-				<li>Service 1</li>
-				<li>Service 2</li>
-				<li>Service 3</li>
-				<li>Service 4</li>
-			</ul>
-		</section>
-
-		<section class="content">
-			<h2>ABOUT US</h2>
-			<p>tis site is under construction we will be soon</p>
-		</section>
-	</main>
+			We gonna offer the best services ever provided by website
 
 	<footer>
+    <footer style="margin-left: 90px;">
 		<p>&copy; 2023 Website Name. All Rights Reserved.</p>
-	</footer>
 </body>
 </html>
 <!DOCTYPE html>
@@ -88,8 +186,6 @@
 <a href="login.html
 " class="download-btn">GET STARTED</a>
 </div>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -126,12 +222,18 @@
     </li>
 </ul>
 </body>
-
+<main>
+  <section id="hero">
+    <h1>THANKS FOR VISITING MY WEBSITE</h1>
+    .</p>
+    <body style="width: 456px;width: 1300px;margin-right: 567px;margin-left: 85px;"></body>
+    
+  </section>
 </html>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
+    <title></title>
     <style>
       body {
         background-color: #c9eb0a;
@@ -143,13 +245,13 @@
 
 body {
   /* Background image  */
-  background: url("down web.png") no-repeat center center fixed;
+  background: url("file:///C:/Users/ADMN/Downloads/down%20web.png") no-repeat center center fixed;
   background-size: cover;
 }
 
 body {
   /* Background pattern */
-  background: url("down web.png");
+  background: url("https://wallpapercave.com/wp/wp2657474.jpg");
   background-size: cover;
 }
 h2 {
